@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #loginform {
+        display: block;
+
+    }
+    
+    </style>
+</head>
+<body>
+    <!-- <form> -->
+    <h1>LOGIN</h1>
+    <div   id="loginform">
+    
+   <p id="email"></p>
+    <p id="emailerror"></p>
+    
+   
+<p id="password">
+  </p>
+  <p id="passworderror"></p>
+
+   <button onclick="restart">submit</button>
+   
+</div>
+<!-- </form> -->
+    <script>
+        document.getElementById("email").innerHTML="<input type =text  placeholder=email,  value=>"
+        document.getElementById("password").innerHTML="<input type =password  placeholder=password, value=>"
+         document.getElementById("email").addEventListener("submit",emailerror)
+         document.getElementById("password").addEventListener("submit",passworderror)
+                function restart() {
+                    let email=gmail.com ;
+                    
+            let emailerror
+            let passworderror
+if(emailerror==email){
+document.getElementById("emailerror").innerText="success"
+
+
+}else {
+    emailerror!==email 
+    document.getElementById("emailerror").innerText="enter the proper email address"
+
+}
+        }
+            
+        
+    
+    </script>
+    
+</body>
+
+</html>

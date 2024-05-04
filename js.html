@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #p3 {
+            color: brown;
+        }
+        .c1 {
+            display: none;
+        }
+        .c2 {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <p id="p1"></p>
+    <p id="p2" class="c2">hello from html</p>
+    <p id="p3"></p>
+    <img src="netfleximage4.jpg" alt="" id="img1">
+ 
+    
+    <div id="d1">
+
+    </div>
+    <!-- dom-document object model --> 
+    <!-- bom-browser object model -->
+    <script>
+         
+        document.getElementById("img1").style="width:50px"
+        console.log(document.getElementById("img1").src);
+         document.getElementById("p1").innerText="hello from js"
+         let word=document.getElementById("p2").textContent
+         console.log(word);
+         document.getElementById("p3").innerText=word
+ 
+         newElem= document.createElement("p")       
+        //    newElem.id="p5";
+           newElem.innerText="newly created"
+          
+
+       document.getElementById("d1").appendChild(newElem);
+
+       newElem1= document.createElement("p")       
+        //    newElem1.id="p6";
+           newElem1.innerText="newly created1"
+
+          
+           let btag=document.getElementsByTagName("body")
+        console.log(btag[0])
+        btag[0].appendChild(newElem1);
+        
+    //    document.getElementById("d1").appendChild(newElem1);
+      document.getElementById("p2").classList.remove("c2")
+    //   document.getElementById("p2").classList.add("c1")
+      document.getElementById("p2").style="color:blue"
+   
+    //   <p style="color:blue"></p>
+    // <input placeholder="enter ur name"/>
+    </script>
+    
+</body>
+</html>

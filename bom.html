@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>start</button>
+    <button>stop</button>
+    <script>
+let time;
+var startwatch=()=>{
+       time= setInterval(()=>{
+ console.log("hello started")
+        },1000)
+        // history.forward()
+
+    }
+let itok;
+var stopwatch=()=>{
+    console.log(time);
+    if(time!==undefined){
+        location.href="dom.html"
+    }else{
+        itok= prompt("please click start before stop button")
+
+    //    itok= confirm("please click start before stop button")
+console.log(itok);
+        // alert("please click start before stop button")
+
+        if(itok=="javascript"){
+            alert("success")
+        }else{
+            alert("failed please give me correct keyword")
+        }
+    }
+    clearInterval(time)
+    // console.log("yes")
+    // event.stopPropagation()
+}
+    document.getElementsByTagName("button")[0].addEventListener("click",startwatch)
+    document.getElementsByTagName("button")[1].addEventListener("click",stopwatch)
+
+    // screen,navigater,history,location,prompt,conform
+    console.log(window.screen.width);
+
+ console.log(location.pathname);
+ console.log(location.host);
+ console.log(navigator.cookieEnabled);
+    </script>
+</body>
+</html>

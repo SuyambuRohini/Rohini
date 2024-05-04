@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .c1{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <p class="c1">hello</p>
+    <button onclick="showhide()">change color</button>
+    <button  onclick="show()">show</button>
+   <input type="text" onchange="change (event)">
+   <button onclick="stop">stop</button>
+   <p id="p1"></p>
+    <script>
+        //  one the another way to call the function..
+// document.getElementById("btn1").addEventListener("dblclick",show)
+// document.getElementsByTagName("input").addEventlistener("change",change)
+    
+function stop (e) {
+    console.log(event);
+    //  event.stopImmediatePropagation()
+    event.propagation()
+}
+
+function showhide() {
+        // document.getElementsByClassName("c1")[0].classList.remove("c1");
+        document.getElementsByClassName("c1")[0].style="display:none";
+
+    }
+    function show() {
+        document.getElementsByClassName("c1")[0].style="display:block";
+        document.getElementById("p1").innerHTML=input;
+
+        setInterval(()=> {
+            console.log("hai timeout");
+
+        },3000); 
+    }
+     let input;
+    function change(e){
+        console.log(e.target.value)
+        input=e.target.value
+    }
+
+
+
+    </script>
+</body>
+</html>

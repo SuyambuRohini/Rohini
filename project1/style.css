@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+     padding: 0;
+}
+.main{
+    width: 100%;
+    background: linear-gradient(to top,rgba(4, 95, 24, 0.5)50%);
+    background-image: url("background2.jpg"); 
+           
+    background-position: center;
+
+    background-size: cover;
+    height: 109vh;
+}
+.navbar {
+    width: 1200px;
+    height: 75px;
+    margin:auto;
+}
+.icon{
+    width: 200px;
+    float:left;
+    height: 70px;
+
+}
+.log {
+    color: brown;
+    font-size: 35px;
+    font-family: arial;
+    padding-left:20px ;
+    float:left;
+    padding-top: 10px;
+}
